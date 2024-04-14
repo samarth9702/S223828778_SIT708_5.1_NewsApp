@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="30dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/my_primary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/article_image_view"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:layout_below="@+id/article_image_view"
+                android:text="This is Article"
+                android:id="@+id/article_title"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="Source"
+                android:layout_below="@+id/article_title"
+                android:textColor="@color/my_tertiary"
+                android:layout_marginBottom="8sp"
+                android:id="@+id/article_source"/>
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
